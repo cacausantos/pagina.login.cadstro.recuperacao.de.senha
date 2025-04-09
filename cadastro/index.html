@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro</title>
+  <style>
+    body {
+      font-family: "Times New Roman", Times, serif;
+      background-color: #f3f3f3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .register-container {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 300px;
+    }
+
+    .register-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #2e8b57;
+      font-weight: bold;
+      font-style: italic;
+    }
+
+    .register-container input {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-family: "Times New Roman", Times, serif;
+      font-weight: bold;
+      font-style: italic;
+    }
+
+    .register-container button {
+      width: 100%;
+      padding: 10px;
+      background-color: #2e8b57;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      font-family: "Times New Roman", Times, serif;
+      font-weight: bold;
+      font-style: italic;
+      margin-top: 10px;
+    }
+
+    .register-container button:hover {
+      background-color: #3cb371;
+    }
+
+    .register-container a {
+      display: block;
+      text-align: center;
+      margin-top: 15px;
+      color: #2e8b57;
+      text-decoration: none;
+      font-family: "Times New Roman", Times, serif;
+      font-weight: bold;
+      font-style: italic;
+    }
+
+    .register-container a:hover {
+      text-decoration: underline;
+      color: #3cb371;
+    }
+
+    .form-group {
+      margin-bottom: 10px;
+    }
+
+    .terms {
+      font-size: 0.9em;
+      margin: 15px 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+    }
+
+    .terms a {
+      display: inline;
+      margin: 0;
+      color: #2e8b57;
+      text-decoration: underline;
+    }
+
+    .terms a:hover {
+      color: #3cb371;
+    }
+
+    .terms input {
+      width: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="register-container">
+    <h2>Criar Conta</h2>
+    <form action="/cadastro" method="POST">
+      <div class="form-group">
+        <input type="text" name="nome" placeholder="Nome completo" required>
+      </div>
+      <div class="form-group">
+        <input type="email" name="email" placeholder="E-mail" required>
+      </div>
+      <div class="form-group">
+        <input type="password" name="senha" placeholder="Senha" required>
+      </div>
+      <div class="form-group">
+        <input type="password" name="confirmar_senha" placeholder="Confirmar senha" required>
+      </div>
+      <div class="terms">
+        <input type="checkbox" name="termos" required>
+        <a href="/termos">Eu concordo com os Termos de Serviço</a>
+      </div>
+      <button type="submit">Cadastrar</button>
+    </form>
+    <a href="file:///C:/Users/carla.6963/Desktop/login/index.html" target="_blank">
+      Já tem conta? Faça login</a> 
+  </div>
+</body>
+</html>
